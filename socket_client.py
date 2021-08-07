@@ -26,17 +26,6 @@ def concect_upload_file(host,port,filename):
             client.send(line)
 
     print(f"{filename} upload ok")
-    # with open(file_path, "rb") as f:
-    #     while file_size:
-    #         if file_size >= buffer:
-    #             client.send(f.read(buffer))
-    #             file_size -= buffer
-    #             print(file_size, buffer, "第一次或中间的")
-    #         else:
-    #             client.send(f.read(buffer))
-    #
-    #             print(file_size, buffer, "最后一次")
-    #             break
     client.close()
 if __name__ == '__main__':
     host=input("please input ip:")
